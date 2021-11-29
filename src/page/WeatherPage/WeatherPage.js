@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-29 12:48:36
- * @LastEditTime: 2021-11-29 13:01:47
+ * @LastEditTime: 2021-11-29 18:30:30
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /g-pm/src/page/WeatherPage/WeatherPage.js
@@ -12,7 +12,7 @@ import Input from "../../componets/Input";
 
 import "./WeatherPage.css";
 /** 获取数据的接口 */
-// import { fetchWeather } from "../../api/fetchWeather";
+import { fetchWeather } from "../../api/fetchWeather";
 import { log } from "../../static/js/utils";
 
 class WeatherPage extends React.Component {
@@ -26,10 +26,10 @@ class WeatherPage extends React.Component {
   }
   searchCity = async () => {
     log("search city", this.state.query);
-    // const weather = await fetchWeather(this.state.query);
-    // this.setState({
-    //   weather,
-    // });
+    const weather = await fetchWeather(this.state.query);
+    this.setState({
+      weather,
+    });
   };
   componentDidMount() {
     this.searchCity();
