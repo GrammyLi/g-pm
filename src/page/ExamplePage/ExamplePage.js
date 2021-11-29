@@ -1,14 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-11-29 12:24:12
- * @LastEditTime: 2021-11-29 12:30:28
- * @LastEditors: your name
+ * @LastEditTime: 2021-11-29 12:33:42
+ * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /g-pm/src/page/ExamplePage/ExamplePage.js
  */
 import React from "react";
 import Button from "../../componets/Button";
-import Input from "../../componets/Input";
+// import Input from "../../componets/Input";
 
 // import "./SearchPage.css";
 /** 获取数据的接口 */
