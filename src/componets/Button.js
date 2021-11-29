@@ -1,14 +1,14 @@
 /*
  * @Author: grammyli
  * @Date: 2021-10-18 09:51:45
- * @LastEditTime: 2021-10-21 19:42:44
+ * @LastEditTime: 2021-11-29 12:30:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /g-design/src/componets/g-button.js
  */
 import "../static/css/Button.css";
 import React from "react";
-import { log } from "../static/js/utils";
+// import { log } from "../static/js/utils";
 class Button extends React.Component {
   render() {
     let { type, value, size, className, onClick, disabled, loading, danger, shape } =
