@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+.g-home {
+  display: flex;
+  height: 100%;
+}
+
+.g-home-content {
+  flex: 1 1;
+  order: 2;
+}
+
+.g-home-left {
+  flex: 0 0 200px;
+  order: 1;
+
+  padding: 32px
+}
+
+.g-home-right {
+  flex: 0 0 300px;
+  order: 3;
+}
+/*清除浮动 */
+.clearfix::after{
+  content:'';
+  clear: both;
+  display: block;
+  height: 0;
+}
+.clearfix{
+  zoom:1
+}
+
+
+.g-home-control {
+  display: flex;
+  height: 32px;
+  margin-top: 32px;
+}
+
+button.g-button.g-button-primary.g-home-left-btn {
+  width: 100%;
+}
