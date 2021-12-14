@@ -1,0 +1,122 @@
+/* table */
+
+.g-table {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000000d9;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.g-table-container {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.g-table .g-table-container:before, .g-table .g-table-container:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 30px;
+  transition: box-shadow .3s;
+  content: "";
+  pointer-events: none;
+}
+
+.g-table .g-table-container:before {
+  left: 0;
+}
+
+.g-table table {
+  width: 100%;
+  text-align: left;
+  border-radius: 2px 2px 0 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.g-table-container table>thead>tr:first-child th:first-child {
+  border-top-left-radius: 2px;
+}
+
+.g-table-thead>tr>th {
+  position: relative;
+  color: #000000d9;
+  font-weight: 500;
+  text-align: left;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background .3s ease;
+}
+
+.g-table-thead>tr>th, .g-table-tbody>tr>td, .g-table tfoot>tr>th, .g-table tfoot>tr>td {
+  position: relative;
+  padding: 16px;
+  overflow-wrap: break-word;
+}
+
+.g-table-thead>tr>th:not(:last-child):not(.g-table-selection-column):not(.g-table-row-expand-icon-cell):not([colspan]):before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: #0000000f;
+  transform: translateY(-50%);
+  transition: background-color .3s;
+  content: "";
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.g-table-tbody>tr>td {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background .3s;
+}
+
+a {
+  transition: color .3s ease;
+}
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s;
+  -webkit-text-decoration-skip: objects;
+}

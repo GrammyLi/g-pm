@@ -24,15 +24,17 @@ body {
   flex: 0 0 300px;
   order: 3;
 }
+
 /*清除浮动 */
-.clearfix::after{
-  content:'';
+.clearfix::after {
+  content: '';
   clear: both;
   display: block;
   height: 0;
 }
-.clearfix{
-  zoom:1
+
+.clearfix {
+  zoom: 1
 }
 
 
@@ -44,4 +46,82 @@ body {
 
 button.g-button.g-button-primary.g-home-left-btn {
   width: 100%;
+}
+
+.g-home-status {
+  margin-top: 12px;
+}
+
+.g-home-status-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.g-home-card-container {
+  margin-top: 32px;
+}
+
+.g-home-card-container {
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+/* card */
+
+.g-home-card {
+  margin-left: 16px;
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  min-height: 250px;
+  max-height: 250px;
+  box-shadow: 0 0 0 4px #1890ff;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.g-home-card .g-home-card-name {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0px;
+  display: block;
+}
+
+.g-home-card .g-home-card-time {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  display: block;
+}
+
+.g-home-card .g-home-schedule {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.g-home-card .g-home-schedule .g-home-card-count {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  display: inline;
+  width: 50%;
+}
+
+.g-home-card .g-home-schedule .g-home-card-completed {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  display: inline;
+}
+
+
+/* table */
+.g-home-list-container {
+  margin-top: 32px;
 }
