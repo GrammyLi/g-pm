@@ -17,8 +17,13 @@ body {
   flex: 0 0 200px;
   order: 1;
 
-  padding: 32px
+  padding: 32px;
 }
+
+.g-home-left-btn {
+  width: 100%;
+}
+
 
 .g-home-right {
   flex: 0 0 300px;
@@ -41,7 +46,7 @@ body {
 .g-home-control {
   display: flex;
   height: 32px;
-  margin-top: 32px;
+  margin-top: 39px;
 }
 
 button.g-button.g-button-primary.g-home-left-btn {
@@ -78,7 +83,7 @@ button.g-button.g-button-primary.g-home-left-btn {
   max-width: 250px;
   min-height: 250px;
   max-height: 250px;
-  box-shadow: 0 0 0 4px #1890ff;
+  box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%);
   border-radius: 24px;
   padding: 32px;
 }
@@ -128,4 +133,34 @@ button.g-button.g-button-primary.g-home-left-btn {
 
 .g-hide {
   display: none !important;
+}
+
+.g-home-left-action-list {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.g-home-left-action-item {
+  height: 30px;
+  color: #353536;
+  margin-bottom: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.g-home-left-action-item span {
+  margin-left: 12px;
+}
+
+.g-home-left-action-item:hover {
+  color: #1890ff;
+}
+
+.g-home-left-action-item.active {
+  color: #1890ff;
 }
