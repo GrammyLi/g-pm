@@ -125,3 +125,7 @@ button.g-button.g-button-primary.g-home-left-btn {
 .g-home-list-container {
   margin-top: 32px;
 }
+
+.g-hide {
+  display: none !important;
+}
