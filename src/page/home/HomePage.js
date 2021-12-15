@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-29 18:41:18
- * @LastEditTime: 2021-12-15 09:39:37
+ * @LastEditTime: 2021-12-15 09:53:04
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /g-pm/src/page/home/HomePage.js
@@ -9,7 +9,7 @@
 import React from "react";
 import Button from "../../componets/Button";
 import Input from "../../componets/Input";
-import Table from "../../componets/Table";
+// import Table from "../../componets/Table";
 import Modal from "../../componets/Modal";
 
 import Card from "./Card";
@@ -122,9 +122,9 @@ class HomePage extends React.Component {
               <Card />
             ))}
           </div>
-          <div className="g-home-list-container">
+          {/* <div className="g-home-list-container">
             <Table className="g-table-list" />
-          </div>
+          </div> */}
         </div>
         <Modal className="g-hide" />
       </div>
