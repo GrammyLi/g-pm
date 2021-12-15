@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-12-14 19:48:36
- * @LastEditTime: 2021-12-14 19:55:56
+ * @LastEditTime: 2021-12-15 09:33:38
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /g-pm/src/componets/Modal.js
@@ -11,7 +11,7 @@ import React, { Fragment } from "react";
 // import {log, } from "../static/js/utils"
 class Modal extends React.Component {
   render() {
-    const { placeholder, value, onChange, className } = this.props;
+    const { className } = this.props;
     // log('classNameName', classNameName)
     // log('name', name)
 
