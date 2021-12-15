@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-29 18:41:18
- * @LastEditTime: 2021-12-15 09:34:01
+ * @LastEditTime: 2021-12-15 09:36:33
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /g-pm/src/page/home/HomePage.js
@@ -112,7 +112,6 @@ class HomePage extends React.Component {
               <Button type="text" value="完成" />
             </div>
             <div className="g-home-status">
-              
               <Button type="primary" value="列表" />
               <Button type="primary" value="卡片" />
             </div>
@@ -122,9 +121,8 @@ class HomePage extends React.Component {
               <Card />
             ))}
           </div>
-          <div className="g-home-list-container">
-            <Table />
-          </div>
+
+          <Table className="g-home-list-container" />
         </div>
         <Modal className="g-hide" />
       </div>

@@ -1,7 +1,7 @@
 /*
  * @Author: grammyli
  * @Date: 2021-10-18 09:51:45
- * @LastEditTime: 2021-12-14 19:39:08
+ * @LastEditTime: 2021-12-15 09:36:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /g-design/src/componets/g-Input.js
@@ -11,11 +11,11 @@ import React, { Fragment } from "react";
 // import {log, } from "../static/js/utils"
 class Table extends React.Component {
   render() {
-    // const { placeholder, value, onChange, className } = this.props;
+    const {className } = this.props;
 
     return (
       <Fragment>
-        <div className="g-table">
+        <div className={`g-table ${className || ''}`}>
           <div className="g-table-container">
             <div className="g-table-content">
               <table>
