@@ -120,3 +120,8 @@ a {
   transition: color .3s;
   -webkit-text-decoration-skip: objects;
 }
+
+td svg {
+  width: 30px;
+  height: 30px;
+}
