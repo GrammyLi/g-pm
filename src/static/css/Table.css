@@ -107,11 +107,11 @@ tr {
   transition: background .3s;
 }
 
-a {
+.grammy {
   transition: color .3s ease;
 }
 
-a {
+.grammy {
   color: #1890ff;
   text-decoration: none;
   background-color: transparent;

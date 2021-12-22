@@ -1,7 +1,7 @@
 /*
  * @Author: grammyli
  * @Date: 2021-10-18 09:51:45
- * @LastEditTime: 2021-12-22 19:03:50
+ * @LastEditTime: 2021-12-22 19:38:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /g-design/src/componets/g-Input.js
@@ -30,7 +30,7 @@ class Table extends React.Component {
                 <tbody className="g-table-tbody">
                   <tr>
                     <td>
-                      <a>name 01</a>
+                      <div className="grammy">name 01</div>
                     </td>
                     <td>11</td>
                     <td>11</td>
