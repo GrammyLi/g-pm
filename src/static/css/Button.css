@@ -7,14 +7,16 @@
     border: 1px solid transparent;
     margin-right: 8px;
     margin-bottom: 12px;
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
     height: 32px;
     padding: 4px 15px;
     font-size: 14px;
     border-radius: 2px;
 }
 
-.g-button, .g-button:active, .g-button:focus {
+.g-button,
+.g-button:active,
+.g-button:focus {
     outline: 0;
 }
 
@@ -22,13 +24,17 @@
     cursor: pointer;
 }
 
-.g-button:hover, .g-button:focus {
+.g-button:hover,
+.g-button:focus {
     color: #40a9ff;
     border-color: #40a9ff;
     background: #fff;
 }
 
-.g-button[disabled], .g-button[disabled]:hover, .g-button[disabled]:focus, .g-button[disabled]:active {
+.g-button[disabled],
+.g-button[disabled]:hover,
+.g-button[disabled]:focus,
+.g-button[disabled]:active {
     color: #00000040;
     border-color: #d9d9d9;
     background: #f5f5f5;
@@ -59,13 +65,17 @@
     box-shadow: 0 2px #0000000b;
 }
 
-.g-button-primary:hover, .g-button-primary:focus {
+.g-button-primary:hover,
+.g-button-primary:focus {
     color: #fff;
     border-color: #40a9ff;
     background: #40a9ff;
 }
 
-.g-button-primary[disabled], .g-button-primary[disabled]:hover, .g-button-primary[disabled]:focus, .g-button-primary[disabled]:active {
+.g-button-primary[disabled],
+.g-button-primary[disabled]:hover,
+.g-button-primary[disabled]:focus,
+.g-button-primary[disabled]:active {
     color: #00000040;
     border-color: #d9d9d9;
     background: #f5f5f5;
@@ -94,7 +104,10 @@
     box-shadow: none;
 }
 
-.g-button-text[disabled], .g-button-text[disabled]:hover, .g-button-text[disabled]:focus, .g-button-text[disabled]:active {
+.g-button-text[disabled],
+.g-button-text[disabled]:hover,
+.g-button-text[disabled]:focus,
+.g-button-text[disabled]:active {
     color: #00000040;
     border-color: transparent;
     background: 0 0;
@@ -102,9 +115,10 @@
     box-shadow: none;
 }
 
-.g-button-text:hover, .g-button-text:focus {
+.g-button-text:hover,
+.g-button-text:focus {
     color: #000000d9;
-    background: rgba(0,0,0,.018);
+    background: rgba(0, 0, 0, .018);
     border-color: transparent;
 }
 
@@ -115,7 +129,9 @@
     box-shadow: none;
 }
 
-.g-button-link:hover, .g-button-link:focus, .g-button-link:active {
+.g-button-link:hover,
+.g-button-link:focus,
+.g-button-link:active {
     border-color: transparent;
 }
 
@@ -123,11 +139,15 @@
     background: 0 0;
 }
 
-.g-button-link:hover, .g-button-link:focus {
+.g-button-link:hover,
+.g-button-link:focus {
     color: #40a9ff;
 }
 
-.g-button-link[disabled], .g-button-link[disabled]:hover, .g-button-link[disabled]:focus, .g-button-link[disabled]:active {
+.g-button-link[disabled],
+.g-button-link[disabled]:hover,
+.g-button-link[disabled]:focus,
+.g-button-link[disabled]:active {
     color: #00000040;
     border-color: transparent;
     background: 0 0;
@@ -148,11 +168,12 @@
 
 .g-button-dangerous {
     color: #ff4d4f;
-    border-color:#ff4d4f; 
+    border-color: #ff4d4f;
     background: #fff;
 }
 
-.g-button-dangerous:hover, .g-button-dangerous:focus {
+.g-button-dangerous:hover,
+.g-button-dangerous:focus {
     color: #ff7875;
     border-color: #ff7875;
     background: #fff;
@@ -164,7 +185,8 @@
     background: #fff;
 }
 
-.g-button.g-button-dashed.g-button-dangerous:hover, .g-button.g-button-dashed.g-button-dangerous.g-button-dangerous:focus {
+.g-button.g-button-dashed.g-button-dangerous:hover,
+.g-button.g-button-dashed.g-button-dangerous.g-button-dangerous:focus {
     color: #ff7875;
     border-color: #ff7875;
     background: #fff;
@@ -203,12 +225,13 @@
 }
 
 @keyframes loadingCircle {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* 混合的class */
@@ -220,16 +243,17 @@
     box-shadow: none;
 }
 
-.g-button-dangerous.g-button-text:hover, .g-button-dangerous.g-button-text:focus {
+.g-button-dangerous.g-button-text:hover,
+.g-button-dangerous.g-button-text:focus {
     color: #ff7875;
     border-color: transparent;
-    background: rgba(0,0,0,.018);
+    background: rgba(0, 0, 0, .018);
 }
 
 .g-button-dangerous.g-button-text:active {
     color: #d9363e;
     border-color: transparent;
-    background: rgba(0,0,0,.028);
+    background: rgba(0, 0, 0, .028);
 }
 
 .g-button-dangerous.g-button-link {
@@ -239,7 +263,8 @@
     box-shadow: none;
 }
 
-.g-button-dangerous.g-button-link:hover, .g-button-dangerous.g-button-link:focus {
+.g-button-dangerous.g-button-link:hover,
+.g-button-dangerous.g-button-link:focus {
     color: #ff7875;
     border-color: transparent;
     background: 0 0;
@@ -259,7 +284,8 @@
     box-shadow: 0 2px #0000000b;
 }
 
-.g-button-dangerous.g-button-primary:hover, .g-button-dangerous.g-button-primary:focus {
+.g-button-dangerous.g-button-primary:hover,
+.g-button-dangerous.g-button-primary:focus {
     color: #fff;
     border-color: #ff7875;
     background: #ff7875;
@@ -271,13 +297,15 @@
     background: #d9363e;
 }
 
-.g-button-dangerous.g-button-primary:hover, .g-button-dangerous.g-button-primary:focus {
+.g-button-dangerous.g-button-primary:hover,
+.g-button-dangerous.g-button-primary:focus {
     color: #fff;
     border-color: #ff7875;
     background: #ff7875;
 }
 
-.g-button.g-button-dashed.g-button-dangerous:hover, .g-button.g-button-dashed.g-button-dangerous.g-button-dangerous:focus {
+.g-button.g-button-dashed.g-button-dangerous:hover,
+.g-button.g-button-dashed.g-button-dangerous.g-button-dangerous:focus {
     color: #ff7875;
     border-color: #ff7875;
     background: #fff;
@@ -335,4 +363,12 @@
     padding: 6.4px 20px;
     font-size: 16px;
     border-radius: 40px;
+}
+
+.g-red-border {
+    border-color: #d9363e !important;
+}
+
+.g-red-color {
+    color: #d9363e !important;
 }
