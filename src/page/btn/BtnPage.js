@@ -1,15 +1,15 @@
 /*
  * @Author: your name
  * @Date: 2021-12-29 19:17:37
- * @LastEditTime: 2021-12-29 19:18:45
- * @LastEditors: your name
+ * @LastEditTime: 2021-12-29 19:23:02
+ * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /g-pm/src/page/btn/BtnPage.js
  */
 import React from "react";
 
 import Button from "../../componets/Button";
-import Input from "../../componets/Input";
+// import Input from "../../componets/Input";
 
 // import { log } from "../../static/js/utils";
 
