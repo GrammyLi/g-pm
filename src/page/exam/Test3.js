@@ -12,7 +12,9 @@ const createForm = () => {
         log("key", key);
         return {
           key,
-          disabled: options.disabled ? options.disabled(this.getFieldValue()) : undefined,
+          disabled: options.disabled
+            ? options.disabled(this.getFieldValue())
+            : undefined,
           onInput: (e) => {
             const v = e.target.value;
             log("v", v);
@@ -37,7 +39,7 @@ const createForm = () => {
               })
               .catch(({ errors }) => {
                 log("err", errors);
-                const err = errors.map((e) => e.message).join(',')
+                const err = errors.map((e) => e.message).join(",");
                 log("err", err);
                 data[key].error = err;
               })
@@ -53,9 +55,9 @@ const createForm = () => {
       };
 
       getFieldError = (key) => {
-        const err = data[key] && data[key].error
-        return err
-      }
+        const err = data[key] && data[key].error;
+        return err;
+      };
 
       render() {
         const form = {
@@ -87,11 +89,9 @@ const Test3 = ({ form }) => {
             },
           ],
         })}
-        className={form.getFieldError('msg') ? 'g-red-border' : null}
+        className={form.getFieldError("msg") ? "g-red-border" : null}
       />
-      <div className="g-red-color">{form.getFieldError('msg')}</div>
-
-
+      <div className="g-red-color">{form.getFieldError("msg")}</div>
       comment:
       <Input
         {...form.getFieldProps("comment", {
@@ -107,12 +107,16 @@ const Test3 = ({ form }) => {
             },
           ],
           disabled(data) {
-            return data.msg === 'www'
-          }
+            if (!data?.msg?.value) {
+              return false;
+            } else {
+              return data.msg.value === "www";
+            }
+          },
         })}
-        className={form.getFieldError('comment') ? 'g-red-border' : null}
+        className={form.getFieldError("comment") ? "g-red-border" : null}
       />
-      <div className="g-red-color">{form.getFieldError('comment')}</div>
+      <div className="g-red-color">{form.getFieldError("comment")}</div>
       <Button
         type="primary"
         value="提交"
