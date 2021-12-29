@@ -1,27 +1,19 @@
 /*
  * @Author: your name
- * @Date: 2021-11-29 12:24:12
- * @LastEditTime: 2021-12-29 14:34:21
- * @LastEditors: Please set LastEditors
+ * @Date: 2021-12-29 19:17:37
+ * @LastEditTime: 2021-12-29 19:18:45
+ * @LastEditors: your name
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: /g-pm/src/page/exam/ExamplePage.js
+ * @FilePath: /g-pm/src/page/btn/BtnPage.js
  */
 import React from "react";
-import Test from "./Test"
-import Test2 from "./Test2"
-import Test3 from "./Test3"
-// import Button from "../../componets/Button";
-// import { log } from "../../static/js/utils";
-// import Input from "../../componets/Input";
 
-// import "./SearchPage.css";
-/** 获取数据的接口 */
+import Button from "../../componets/Button";
+import Input from "../../componets/Input";
 
 // import { log } from "../../static/js/utils";
 
-
-
-class ExamplePage extends React.Component {
+class BtnPage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -31,21 +23,9 @@ class ExamplePage extends React.Component {
   render() {
     return (
       <div>
-        {/* <h1>g-button</h1> */}
-        <div>
-          <h1>常规的表单</h1>
-          <Test />
-        </div>
-        <div>
-          <h1>加了验证</h1>
-          <Test2 />
-        </div>
+        <h1>g-button</h1>
 
-        <div>
-          <h1>表单联动</h1>
-          <Test3 />
-        </div>
-        {/* <Button value="default" />
+        <Button value="default" />
         <Button type="primary" value="primary" />
         <Button type="text" value="text" />
         <Button type="link" value="link" />
@@ -89,12 +69,12 @@ class ExamplePage extends React.Component {
         <Button type="dashed" value="dashed danger" danger={true} />
 
         <h1>shape</h1>
-        <Button type="primary" value="primary" /> */}
+        <Button type="primary" value="primary" />
         {/* <Button type="primary" value="primary" shape="circle" />
         <Button type="primary" value="primary" shape="circle" size="large" />
         <Button type="primary" value="primary" shape="circle" size="small" /> */}
 
-        {/* <Button type="primary" value="primary" shape="round" />
+        <Button type="primary" value="primary" shape="round" />
         <Button
           type="primary"
           value="primary large"
@@ -106,9 +86,9 @@ class ExamplePage extends React.Component {
           value="primary small"
           shape="round"
           size="small"
-        /> */}
+        />
       </div>
     );
   }
 }
-export default ExamplePage;
+export default BtnPage;
